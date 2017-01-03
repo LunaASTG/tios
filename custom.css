@@ -219,7 +219,7 @@ background: linear-gradient(to bottom,  #ffffff 0%,#1d3660 12%,#000000 100%); /*
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
 ;
 color: #ffffff;
-z-index: 50;
+z-index: 19;
 }
 .productos-list {
   text-transform: uppercase;
@@ -390,4 +390,8 @@ background: linear-gradient(to bottom,  #ffffff 0%,#1d3660 12%,#000000 100%); /*
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
 ;
 border: none!important;
+}
+/** Modal **/
+.modal-color {
+  background-color: #1D3660!important;
 }
