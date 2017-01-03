@@ -53,8 +53,8 @@ body {
   float: left;
 }
 /** Backgrounds **/
-.bg-white {
-  background-color: #fff;
+.bg-solid {
+  background-color: #1D3660;;
   padding-bottom: 1px;
 }
 .bg-beige {
@@ -97,6 +97,14 @@ background: -webkit-linear-gradient(top,  #f2c86f 0%,#f7e2b2 99%); /* Chrome10-2
 background: linear-gradient(to bottom,  #f2c86f 0%,#f7e2b2 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2c86f', endColorstr='#f7e2b2',GradientType=0 ); /* IE6-9 */
 
+}
+.bg-white{
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ead9c3+0,ffffff+100 */
+background: #ead9c3; /* Old browsers */
+background: -moz-linear-gradient(top,  #ead9c3 0%, #ffffff 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #ead9c3 0%,#ffffff 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #ead9c3 0%,#ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ead9c3', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
 }
 .bg-special{
   background-image: url(images/background/background2.png);
