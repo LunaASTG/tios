@@ -107,9 +107,9 @@
 
 						<ul>
 							<li><a href="index.html"><div>Página Principal</div></a></li>
-							<li><a href="#productos"><div>Línea de Productos</div></a></li>
-							<li><a href="#sucursales"><div>Sucursales</div></a></li>
-							<li><a href="#especialidad"><div>Especialidad del mes</div></a></li>
+							<li><a href="#productos" data-href="#productos"><div>Línea de Productos</div></a></li>
+							<li><a href="#sucursales" data-href="#sucursales"><div>Sucursales</div></a></li>
+							<li><a href="#especialidad" data-href="#especialidad"><div>Especialidad del mes</div></a></li>
 							<li><a href="#eventos"><div>Eventos</div></a></li>
 							<li><a href="#video"><div>Videos</div></a></li>
 							<li><a href="#contacto"><div>Contacto</div></a></li>
@@ -173,8 +173,9 @@
 								<img src="images/content/principal/personaje1.png" alt="Tío Sam" data-animate="fadeInRight">
 							</div>
 						</div>
-						<div id='productos' class="container clearfix bg-midorange">
-							<div class="divider divider-border divider-right divider-nomargin"><a href="#productos" class="button button-large button-divider button-rounded">Línea de productos</a></div>
+
+						<div id="productos" class="container clearfix bg-midorange page-section">
+							<div class="divider divider-border divider-right divider-nomargin"><a href="#"  class="button button-large button-divider button-rounded">Línea de productos</a></div>
 							<div class="bg-special" data-animate="fadeInUp">
 							<div class="col_one_third center productos-list">
 								<ul>
@@ -215,7 +216,7 @@
 							</div>
 						</div>
 
-						<div id="sucursales" class="container clearfix bg-orange1">
+						<div id="sucursales" class="container clearfix bg-orange1 page-section">
 							<div class="divider divider-border divider-right divider-nomargin divider-special"><a href="#sucursales" class="button button-large button-divider button-rounded">Sucursales</a></div>
 							<div class="bg-trigo">
 							<div class="col_three_fifth left sucursales-text-style sts-1 sts-marginb margins-30" >
@@ -439,8 +440,39 @@
 
 						<div id="facturacion" class="container clearfix bg-white">
 							<div class="divider divider-border divider-right divider-nomargin2 divider-special"><a href="#facturacion" class="button button-large button-divider button-rounded">Facturación</a></div>
+							<div class="margins-30 bg-texture">
+
+							<div class="col_one_third center factura-button" style="margin-top: 5%;">
+								<button class="button button-3d nomargin " type=""  value="">Generar factura</button>
+							</div>
+							<div class="col_one_third center">
+								<img src="images/logos/logo1.png" alt="">
+							</div>
+							<div class="col_one_third center col_last factura-button" style="margin-top: 5%;">
+								<button class="button button-3d nomargin margins-30" type=""  value="">Imprimir factura</button>
+							</div>
+
+							<div class="clear"></div>
+							<div class="col_full">
+								<div class="heading-block text2 text3" data-animate="fadeInLeft">
+									<p>FACTURACIÓN ELECTRÓNICA<br>
+										¡Ahora ya puedes obtener la factura de tu compra desde la comodidad de tu casa!
+										Genera por primera vez o reimprime tu factura.
+										Es importante que en cualquiera de los casos cuentes con el ticket de compra
+										asì como Adobe Reader instalado en el equipo para que puedas consultar tus archivos.
+										<br><br>
+										CENTRO DE ATENCION A CLIENTES: (55) 6285-0400 ext. 9011 ó 9153
+										Horario de Facturación: Lunes a Domingo de 12:00 a.m. a 9:00 p.m.</p>
+									</div>
+
+									<p class="text2 text3" data-animate="fadeInLeft">*Solo se podrá facturar tickets emitidos durante los primeros 5 días a su expedición. <br>
+										**En ambos casos es necesario contar con el ticket de compra, así como Adobe Reader instalado</p>
+
+							</div>
+
+							<div class="clear"></div>
+							</div>
 						</div>
-					</div>
 
 			</div>
 
@@ -472,9 +504,9 @@
 								<i class="icon-twitter"></i>
 							</a>
 
-							<a href="#" class="social-icon si-small si-borderless si-gplus">
-								<i class="icon-gplus"></i>
-								<i class="icon-gplus"></i>
+							<a href="#" class="social-icon si-small si-borderless si-instagram">
+								<i class="icon-instagram"></i>
+								<i class="icon-instagram"></i>
 							</a>
 
 						</div>
@@ -516,6 +548,7 @@
 	<script type="text/javascript" src="include/rs-plugin/js/extensions/revolution.extension.navigation.min.js"></script>
 	<script type="text/javascript" src="include/rs-plugin/js/extensions/revolution.extension.migration.min.js"></script>
 	<script type="text/javascript" src="include/rs-plugin/js/extensions/revolution.extension.parallax.min.js"></script>
+
 
 	<script type="text/javascript">
 
@@ -635,6 +668,31 @@
 		});
 
 	</script><!-- END REVOLUTION SLIDER -->
+	<script>
+jQuery(function($) {
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
 
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
 </body>
 </html>

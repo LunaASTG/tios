@@ -58,6 +58,13 @@ body {
   background-color: #1D3660;;
   padding-bottom: 1px;
 }
+.bg-texture {
+  background-image: url(images/background/background5.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center bottom;
+  height: 720px;
+}
 .bg-beige {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+75,ffffff+75,f2d9af+100 */
 background: #ffffff; /* Old browsers */
@@ -153,6 +160,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#112970', end
   text-align: center;
   font-weight: bold;
   margin-left: 4%;
+}
+.text3 {
+  font-size: 14px!important;
+  margin-right: 4%;
 }
 .italic-regular {
   font-style: italic;
@@ -368,4 +379,15 @@ z-index: 50;
 .divider-nomargin2 {
     margin: 0!important;
     top: -1px!important;
+}
+/** Factura **/
+.factura-button button{
+  background-color: /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,1d3660+12,000000+100 */
+background: #ffffff; /* Old browsers */
+background: -moz-linear-gradient(top,  #ffffff 0%, #1d3660 12%, #000000 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #ffffff 0%,#1d3660 12%,#000000 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #ffffff 0%,#1d3660 12%,#000000 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+;
+border: none!important;
 }
