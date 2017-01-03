@@ -48,6 +48,7 @@ body {
 /** Float sides **/
 .right {
   float: right;
+  text-align: right;
 }
 .left {
   float: left;
@@ -236,6 +237,9 @@ z-index: 50;
 .margins-30 {
   margin-top: 30px;
 }
+.marginb-10 {
+  margin-bottom: 10%!important;
+}
 .special-logo {
   position: absolute;
   top: -72px;
@@ -339,6 +343,21 @@ z-index: 50;
 /** Eventos **/
 .events-style {
   margin-bottom: 5%;
+}
+
+/** Contacto **/
+.contacto-style-text label {
+  font-family: 'Candara', sans-serif;
+  font-size: 14px;
+  color: #ffffff!important;
+  padding-left: 10px;
+}
+.contacto-button button {
+  background-color: #DC2026;
+}
+.contacto-button button:hover {
+  background-color: #ffffff;
+  color: #DC2026;
 }
 /** Footer**/
 .custom {

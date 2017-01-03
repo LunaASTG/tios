@@ -139,7 +139,7 @@ dl, dt, dd, ol, ul, li {
 
 body {
 	line-height: 1.5;
-	color: #555;
+	color: #ffffff;
 	font-family: 'Candara',ssans-serif;
 }
 
@@ -6798,7 +6798,7 @@ body:not(.device-touch) .button {
 }
 
 .button.button-3d:hover {
-	background-color: #1ABC9C !important;
+	background-color:  #ffffff!important;
 	opacity: 0.9;
 }
 
@@ -8565,7 +8565,7 @@ body:not(.device-touch) .on-hover.i-overlay {
 -----------------------------------------------------------------*/
 
 .si-dark {
-	background-color: #444;
+	background-color: #DC2026;
 	color: #FFF !important;
 	border-color: transparent;
 }
@@ -10920,11 +10920,10 @@ body:not(.device-touch) .text-overlay {
 	padding: 8px 14px;
 	font-size: 15px;
 	line-height: 1.42857143;
-	color: #555555;
+	color: #DC2026;
+	border-radius: 15px!important;
 	background-color: #ffffff;
 	background-image: none;
-	border: 2px solid #DDD;
-	border-radius: 0 !important;
 	-webkit-transition: border-color ease-in-out .15s;
 	-o-transition: border-color ease-in-out .15s;
 	transition: border-color ease-in-out .15s;
@@ -12028,7 +12027,7 @@ button.toast-close-button {
 
 .widget {
 	position: relative;
-	margin-top: 50px;
+	margin-top: 20px;
 }
 
 .widget p { line-height: 1.7; }
