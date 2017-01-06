@@ -65,6 +65,13 @@ body {
   background-position: center bottom;
   height: 720px;
 }
+.bg-small {
+  background-image: url(images/background/background6.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  height: 286px;
+}
 .bg-beige {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+75,ffffff+75,f2d9af+100 */
 background: #ffffff; /* Old browsers */
