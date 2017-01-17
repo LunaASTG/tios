@@ -58,12 +58,19 @@ body {
   background-color: #1D3660;;
   padding-bottom: 1px;
 }
-.bg-texture {
+.bg-fc-lg {
   background-image: url(images/background/background5.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center bottom;
   height: 720px;
+}
+.bg-fc-md {
+  background-image: url(images/background/background5.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center bottom;
+  height: 620px;
 }
 .bg-small {
   background-image: url(images/background/background6.png);
@@ -142,12 +149,26 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ead9c3', end
   background-position: center bottom;
   height: 1080px;
 }
-.bg-trigo {
+.bg-trigo-lm {
   background-image: url(images/background/background3.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   height: 980px;
+}
+.bg-trigo-s {
+  background-image: url(images/background/background3.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 780px;
+}
+.bg-trigo-x {
+  background-image: url(images/background/background3.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: auto;
 }
 .bg-blue {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#112970+0,0077bd+100 */
@@ -158,13 +179,34 @@ background: linear-gradient(to bottom,  #112970 0%,#0077bd 100%); /* W3C, IE10+,
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#112970', endColorstr='#0077bd',GradientType=0 ); /* IE6-9 */
 
 }
-.bg-stars{
+.bg-stars-lg{
   background-image: url(images/background/background4.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   height: 710px;
   }
+.bg-stars-md{
+    background-image: url(images/background/background4.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 580px;
+}
+.bg-stars-sm{
+  background-image: url(images/background/background4.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 320px;
+  }
+  .bg-stars-xs{
+    background-image: url(images/background/background4.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    }
 .divider-nomargin{
   margin: 0!important;
   top: -30px!important;
@@ -274,10 +316,15 @@ z-index: 19;
 .marginb-10 {
   margin-bottom: 10%!important;
 }
-.special-logo {
+.special-logo-lm {
   position: absolute;
   top: -72px;
-  left: 20%;
+  left: 15%;
+}
+.special-logo-s {
+  position: absolute;
+  top: -45px;
+  left: 10%;
 }
 /* heading-block2 */
 .heading-block2 { margin-bottom: 15px; }
@@ -306,7 +353,7 @@ z-index: 19;
 .heading-block3.noborder:after,
 .heading-block3.nobottomborder:after { display: none; }
 
-.heading-block3.border-color:after { border-color: #1ABC9C; }
+.heading-block3.border-color:after { border-color: #dc2026; }
 
 /* heading-block3 */
 .heading-block3 { margin-bottom: 15px; }
@@ -335,7 +382,8 @@ z-index: 19;
 .heading-block3.noborder:after,
 .heading-block3.nobottomborder:after { display: none; }
 
-.heading-block3.border-color:after { border-color: #1ABC9C; }
+.heading-block3.border-color:after { border-color: #dc2026; }
+
 /** Sucursales section **/
 .sucursales-list{
   padding-left: 3%;
@@ -356,26 +404,11 @@ z-index: 19;
 }
 .sucursales-text-style h2 {
   color: #ffffff;
-  font-size: 30px;
   background-image: url(images/content/special-icons/button-skew.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: right;
   padding-left: 3%;
-
-}
-.sts-1 h2 {
-  width: 40%;
-}
-.sts-2 h2{
-  width: 60%;
-  border-left: 1px solid #DC2026;
-}
-.sts-2{
-  border-left: 5px solid #DC2026;
-}
-.sts-marginb {
-  margin-bottom: 10px!important;
 }
 .sucursales-text-style h3 {
   color: #1D3660;
@@ -390,6 +423,101 @@ z-index: 19;
   padding-left: 15px;
   margin-bottom: 20px!important;
 }
+
+.sucursales-text-style2{
+  color: #1D3660;
+}
+.sucursales-text-style2 ul{
+  list-style: none;
+}
+.sucursales-text-style2 li {
+  font-size: 15px;
+}
+.sucursales-text-style2 i {
+  font-size: 12px;
+  color: #DC2026;
+  padding-right: 5px;
+}
+.sucursales-text-style2 h2 {
+  color: #ffffff;
+  background-image: url(images/content/special-icons/button-skew.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+  padding-left: 3%;
+  margin: 0 0 15px 0!important;
+}
+.sucursales-text-style2 h3 {
+  color: #1D3660;
+  font-size: 16px;
+  margin: 0 0 2px 0;
+  font-weight: bold;
+}
+.sucursales-text-style2 p {
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 1.3!important;
+  padding-left: 15px;
+  margin-bottom: 15px!important;
+}
+
+.sucursales-text-style3{
+  color: #1D3660;
+}
+.sucursales-text-style3 ul{
+  list-style: none;
+}
+.sucursales-text-style3 li {
+  font-size: 15px;
+}
+.sucursales-text-style3 i {
+  font-size: 12px;
+  color: #DC2026;
+  padding-right: 5px;
+}
+.sucursales-text-style3 h2 {
+  color: #ffffff;
+  background-image: url(images/content/special-icons/button-skew.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+  padding-left: 3%;
+  margin: 0 0 15px 0!important;
+}
+.sucursales-text-style3 h3 {
+  color: #1D3660;
+  font-size: 16px;
+  margin: 0 0 2px 0;
+  font-weight: bold;
+}
+.sucursales-text-style3 p {
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 1.3!important;
+  padding-left: 15px;
+  margin-bottom: 15px!important;
+}
+
+.sts-1 h2 {
+  width: 40%;
+}
+.sts-2 h2{
+  width: 60%;
+  border-left: 1px solid #DC2026;
+}
+.sts-2{
+  border-left: 5px solid #DC2026;
+}
+.sts-3 i {
+  margin-left: 2%;
+}
+.sts-4 h2{
+  width: 60%;
+}
+.sts-marginb {
+  margin-bottom: 10px!important;
+}
+
 /** Especialidad del mes **/
 .especialidad-style-text {
   text-align: center;
@@ -398,6 +526,14 @@ z-index: 19;
 }
 .est {
   margin-top: 90%;
+}
+.est-sm {
+  margin-top: 10%;
+  width: 70%;
+}
+.est-xs {
+  margin-top: 0%;
+  width: 50%;
 }
 .especialidad-style-text p {
   font-size: 60;

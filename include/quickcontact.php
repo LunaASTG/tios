@@ -5,15 +5,15 @@ require_once('phpmailer/PHPMailerAutoload.php');
 $toemails = array();
 
 $toemails[] = array(
-				'email' => 'username@website.com', // Your Email Address
-				'name' => 'Your Name' // Your Name
+				'email' => 'pantiosam@hotmail.com', // Email Address
+				'name' => 'Panificadora Tío Sam' // Name
 			);
 
 // Form Processing Messages
-$message_success = 'We have <strong>successfully</strong> received your Message and will get Back to you as soon as possible.';
+$message_success = 'Hemos recibido tu correo <strong>correctamente</strong>. Te enviaremos una respuesta lo más pronto posible, Gracias.';
 
 // Add this only if you use reCaptcha with your Contact Forms
-$recaptcha_secret = 'your-recaptcha-secret-key'; // Your reCaptcha Secret
+$recaptcha_secret = ''; // Your reCaptcha Secret
 
 $mail = new PHPMailer();
 

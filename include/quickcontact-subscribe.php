@@ -8,15 +8,15 @@ $listId = '69350e983d'; // Your MailChimp List ID
 $toemails = array();
 
 $toemails[] = array(
-				'email' => 'username@website.com', // Your Email Address
-				'name' => 'Your Name' // Your Name
+				'email' => 'pantiosam@hotmail.com', // Email Address
+				'name' => 'Panificadora Tío Sam' // Name
 			);
 
 // Form Processing Messages
-$message_success = 'We have <strong>successfully</strong> received your Message and will get Back to you as soon as possible.';
+$message_success = 'Hemos recibido tu correo <strong>correctamente</strong>. Te enviaremos una respuesta lo más pronto posible, gracias.';
 
 // Add this only if you use reCaptcha with your Contact Forms
-$recaptcha_secret = 'your-recaptcha-secret-key'; // Your reCaptcha Secret
+$recaptcha_secret = ''; // Your reCaptcha Secret
 
 $mail = new PHPMailer();
 
@@ -31,7 +31,7 @@ if( $_SERVER['REQUEST_METHOD'] == 'POST' ) {
 		$subscribe_email = $email;
 		$message = $_POST['quick-contact-form-message'];
 
-		$subject = 'New Message From Quick Contact Form';
+		$subject = 'Nuevo mensaje de formato de contacto';
 
 		$botcheck = $_POST['quick-contact-form-botcheck'];
 
@@ -52,7 +52,7 @@ if( $_SERVER['REQUEST_METHOD'] == 'POST' ) {
 			$email = isset($email) ? "Email: $email<br><br>" : '';
 			$message = isset($message) ? "Message: $message<br><br>" : '';
 
-			$referrer = $_SERVER['HTTP_REFERER'] ? '<br><br><br>This Form was submitted from: ' . $_SERVER['HTTP_REFERER'] : '';
+			$referrer = $_SERVER['HTTP_REFERER'] ? '<br><br><br>Este formato fue enviado de: ' . $_SERVER['HTTP_REFERER'] : '';
 
 			$body = "$name $email $message $referrer";
 
@@ -107,16 +107,16 @@ if( $_SERVER['REQUEST_METHOD'] == 'POST' ) {
 
 				echo '{ "alert": "success", "message": "' . $message_success . '" }';
 			else:
-				echo '{ "alert": "error", "message": "Email <strong>could not</strong> be sent due to some Unexpected Error. Please Try Again later.<br /><br /><strong>Reason:</strong><br />' . $mail->ErrorInfo . '" }';
+				echo '{ "alert": "error", "message": "Email <strong>no enviado</strong> debido a un error inesperado. Intentalo de nuevo más tarde.<br /><br /><strong>Razón:</strong><br />' . $mail->ErrorInfo . '" }';
 			endif;
 		} else {
-			echo '{ "alert": "error", "message": "Bot <strong>Detected</strong>.! Clean yourself Botster.!" }';
+			echo '{ "alert": "error", "message": "Bot <strong>Detectado</strong>.! Limpia Botster.!" }';
 		}
 	} else {
-		echo '{ "alert": "error", "message": "Please <strong>Fill up</strong> all the Fields and Try Again." }';
+		echo '{ "alert": "error", "message": "Por favor <strong>llena</strong> todos los campos y vuelvelo a intentar." }';
 	}
 } else {
-	echo '{ "alert": "error", "message": "An <strong>unexpected error</strong> occured. Please Try Again later." }';
+	echo '{ "alert": "error", "message": "Un <strong>error inesperado</strong> ha ocurrido. Intentalo de nuevo más tarde." }';
 }
 
 ?>

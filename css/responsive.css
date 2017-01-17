@@ -350,6 +350,7 @@
 	#primary-menu {
 		display: block;
 		float: none;
+		margin: 0 10%; /* Única cosa corregida aqui */
 	}
 
 	#primary-menu-trigger {
@@ -1851,4 +1852,3 @@ only screen and (                min-resolution: 2dppx) and (max-width: 991px) {
 	#logo a.standard-logo { display: none; }
 	#logo a.retina-logo { display: inline-block; }
 }
-
